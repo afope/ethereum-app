@@ -1,0 +1,59 @@
+.home {
+  background: red;
+}
+
+/* header */header {
+  text-align: center;
+}
+
+/* header */p {
+  color: #	#FF6347;
+  font-size: 20px;
+  padding: 2rem;
+}
+
+/* body */.home__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* section */.home__send-transaction {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #588BAE;
+  color: #fff;
+  text-align: center;
+}
+
+/* h1 */.home__send-transaction__title {
+  font-size: 40px;
+}
+
+/* section */.home__query-transaction {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #89CFF0;
+  color: #fff;
+}
+
+.home__transaction__body {
+  height: 30px;
+}
+
+/* button */button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+}

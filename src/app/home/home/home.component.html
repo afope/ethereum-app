@@ -1,0 +1,19 @@
+<div class="home">
+  <body class="home__body">
+    <section class="home__send-transaction">
+      <h1 class="home__send-transaction__title">Send transaction</h1>
+      <button type="button" (click)="this.sendSignedTransaction(this.rawTx)" name="button">Send</button>
+      <div class="home__transaction__body">
+        <p *ngIf="transaction">transaction : {{transaction}} sucessfully sent!</p>
+      </div>
+    </section>
+
+    <section class="home__query-transaction">
+      <h1 class="home__send-transaction__title">Query transaction</h1>
+      <button type="button" (click)="this.querySentTransaction(transaction)" name="button">Query</button>
+      <div class="home__transaction__body">
+        <p *ngIf="result">query: {{result}}</p>
+      </div>
+    </section>
+  </body>
+</div>
