@@ -68,6 +68,7 @@ export class HomeComponent implements OnInit {
       .sendSignedTransaction(rawTx)
       .then(result => {
         this.transaction = result;
+        console.log('transaction', this.transaction)
         alert('Transaction successful!')
         return result;
       })
@@ -80,13 +81,15 @@ export class HomeComponent implements OnInit {
     this.web3
       .querySentTransaction(transactionHash)
       .then(result => {
-        console.log('result', result)
         this.result = result;
         alert('Query successful!')
+        if (result == 'null') {
+          alert('Your result is null! This means your transaction has not beeen mined yet. Please try again later.')
+        }
         return result;
       })
       .catch(err => {
-        alert(err)
+        alert('Please make sure you send your transaction first!')
         return err;
       });
   }
