@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 const Web3 = require('web3');
-//const Tx = require('ethereumjs-tx').Transaction;
 
 declare let window: any;
 declare let require: any;

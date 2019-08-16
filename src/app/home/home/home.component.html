@@ -10,7 +10,7 @@
 
     <section class="home__query-transaction">
       <h1 class="home__send-transaction__title">Query transaction</h1>
-      <button type="button" (click)="this.querySentTransaction(transaction)" name="button">Query</button>
+      <button type="button" (click)="this.querySentTransaction(transaction)" name="button" class="query__button">Query</button>
       <div class="home__transaction__body">
         <p *ngIf="result">query: {{result}}</p>
       </div>
